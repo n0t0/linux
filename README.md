@@ -43,3 +43,26 @@ $ grub-mkconfig --> rebuild the main installation file
 
 - /sbin/init
 - /etc/init
+- /bin/init
+
+### System V
+
+- runlevels
+id:3:initdefault:process
+
+$ chkconfig --list
+$ runlevel --> show current and previous runlevel
+$ init 6 --> chaneg run level
+
+### systemd
+
+- units and targets
+
+$ systemctl list-units
+
+- /etc/systemd/system/default.target
+$ journalctl --> read logs
+
+### Upstart
+
+ $ sudo stop bluetooth
