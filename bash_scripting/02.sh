@@ -18,4 +18,19 @@
 # export --> exports variables to subshells
 
 # /etc/profile
-# /etc/bashrc 
+# /etc/bashrc
+
+#### Quoting
+
+# ' - strong
+# " - weak
+
+#### Arguments
+
+# ${nn} or shift more than 9 arguments
+# use 'for' to evaluate all possible arguments
+# $@ to refer to all arguemnts provided
+# $# to count the amount of arguments provided
+# $* if you need a single string that contains all arugments
+
+# bash -x scriptname --> executes the script in bash
