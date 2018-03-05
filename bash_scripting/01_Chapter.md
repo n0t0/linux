@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #### Exiting a script
 # echo $? --> returns the exit status of the last command used
 
