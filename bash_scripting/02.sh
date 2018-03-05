@@ -34,3 +34,20 @@
 # $* if you need a single string that contains all arugments
 
 # bash -x scriptname --> executes the script in bash
+
+#### Shift
+
+# ${10}
+
+#### Command substition
+
+# `command`
+# $(command)
+
+#### String Verification
+
+# test -z --> check if a string is empty
+
+# use [[ $1 == '[a-z]*' ]] to check for specific patterns
+
+#### Test command
