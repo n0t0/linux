@@ -12,3 +12,4 @@ $ grep -v --> ignore
 ### cut & sort
 
 $ cut -f 1 -d : /etc/passwd
+
