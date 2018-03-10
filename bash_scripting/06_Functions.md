@@ -32,3 +32,14 @@ func_name ()
 
 $ echo ${names[2]}
 $ echo ${names[@])}
+$ echo ${#names[@])}
+
+- name[4]=mery
+
+### Defining menu interfaces 
+
+- select 
+- break 
+
+### trap
+
