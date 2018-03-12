@@ -43,3 +43,5 @@ $ echo ${#names[@])}
 
 ### trap
 
+- trap --> can be used to redefine signals 
+- man 7 signal 
