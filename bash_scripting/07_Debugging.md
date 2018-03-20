@@ -8,4 +8,11 @@ $ bash -x --> extrace information
 - - trap DEBUG
 
 
+### Math 
+
+$ echo $RANDOM
+$ echo $RANDOM % 10 --> random number from 1 to 10
+$ expr $RANDOM % 10 --> evaluate expression 
+
+
 
