@@ -3,26 +3,26 @@
 - parameter
 - variable
 
-### Defined variables
+### Defined Variables
 
-static: VARNAME=value
+static: VARNAME=value 
 as an argument $1, $2
 using 'read'
 
-### Defining variables with 'read'
+### Defining Variables with 'read'
 
 bash -x scriptname --> show every line from the script
 
-### Variables and subshells
+### Variables and Subshells
 
 export --> exports variables to subshells
 
-/etc/profile
+/etc/profile <br />
 /etc/bashrc
 
 ### Quoting
 
-' - strong
+' - strong <br />
 " - weak
 
 ### Arguments
@@ -33,13 +33,13 @@ export --> exports variables to subshells
 - $# to count the amount of arguments provided
 - $* if you need a single string that contains all arugments
 
-#### bash -x scriptname --> executes the script in bash
+- bash -x scriptname --> executes the script in bash
 
 ### Shift
 
 ${10}
 
-### Command substition
+### Command Substition
 
 `command`
 $(command)
@@ -50,4 +50,4 @@ test -z --> check if a string is empty
 
 use [[ $1 == '[a-z]*' ]] to check for specific patterns
 
-### Test command
+### Test Command
