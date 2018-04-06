@@ -33,7 +33,7 @@ export --> exports variables to subshells
 - $# to count the amount of arguments provided
 - $* if you need a single string that contains all arugments
 
-# bash -x scriptname --> executes the script in bash
+#### bash -x scriptname --> executes the script in bash
 
 ### Shift
 
