@@ -1,0 +1,1 @@
+if [[ `ps aux | egrep 'bin/filebeat\ ' | grep -v grep | awk '{print $4}' | awk -F. '{print $1}'` -gt 0 ]]; then echo true; fi

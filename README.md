@@ -1,1 +1,1 @@
-Notes about LPIC
+Bash Scripting 
