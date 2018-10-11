@@ -1,4 +1,4 @@
-### Exit Status
+### Exit Status 0-255
 
 - exit 0
 - exit 1 
@@ -32,3 +32,21 @@ then
     echo "$HOST unreachable."
 fi
 ```
+
+### && and ||
+
+```
+HOST="google.com"
+ping -c 1 $HOST && echo "$HOST reachable."
+ping -c 1 $HOST || echo "$HOST unreachable."
+```
+
+### ; 
+
+```
+cmd1
+cmd2
+...
+cmd 1; cmd2 
+```
+
