@@ -1,5 +1,9 @@
 #! /bin/bash
 
+"""
+Enter a file argument
+"""
+
 if [ -d $1 ]
 then
     echo $1 'is a directory'
