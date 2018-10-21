@@ -86,7 +86,7 @@ DATE=$(date +%F)
 for PICTURE in $PICTURES
 do
     echo "Renaming ${PICTURE} to ${DATE}-${PICTURE}"
-    mv ${PICUTRE} ${DATE}-${PICTURE}
+    mv ${PICURE} ${DATE}-${PICTURE}
 done
 ```
 
