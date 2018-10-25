@@ -1,6 +1,6 @@
 #!/bin/bash
 
-case $VAR in 
+case $1 in 
     start)
         /tmp/sleep-walking-server.sh &
         ;;
