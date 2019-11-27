@@ -1,53 +1,53 @@
-# argument
-# option
-# parameter
-# variable
+- argument
+- option
+- parameter
+- variable
 
-#### Defined variables
+### Defined Variables
 
-# static: VARNAME=value
-# as an argument $1, $2
-# using 'read'
+static: VARNAME=value 
+as an argument $1, $2
+using 'read'
 
-#### Defining variables with 'read'
+### Defining Variables with 'read'
 
-# bash -x scriptname --> show every line from the script
+bash -x scriptname --> show every line from the script
 
-#### Variables and subshells
+### Variables and Subshells
 
-# export --> exports variables to subshells
+export --> exports variables to subshells
 
-# /etc/profile
-# /etc/bashrc
+/etc/profile <br />
+/etc/bashrc
 
-#### Quoting
+### Quoting
 
-# ' - strong
-# " - weak
+' - strong <br />
+" - weak
 
-#### Arguments
+### Arguments
 
-# ${nn} or shift more than 9 arguments
-# use 'for' to evaluate all possible arguments
-# $@ to refer to all arguemnts provided
-# $# to count the amount of arguments provided
-# $* if you need a single string that contains all arugments
+- ${nn} or shift more than 9 arguments
+- use 'for' to evaluate all possible arguments
+- $@ to refer to all arguemnts provided
+- $# to count the amount of arguments provided
+- $* if you need a single string that contains all arugments
 
-# bash -x scriptname --> executes the script in bash
+- bash -x scriptname --> executes the script in bash
 
-#### Shift
+### Shift
 
-# ${10}
+${10}
 
-#### Command substition
+### Command Substition
 
-# `command`
-# $(command)
+`command`
+$(command)
 
-#### String Verification
+### String Verification
 
-# test -z --> check if a string is empty
+test -z --> check if a string is empty
 
-# use [[ $1 == '[a-z]*' ]] to check for specific patterns
+use [[ $1 == '[a-z]*' ]] to check for specific patterns
 
-#### Test command
+### Test Command
