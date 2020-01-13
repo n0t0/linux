@@ -49,3 +49,8 @@ echo "MULTI $(( num*=10 ))
 
 - [ 3 -qe 3 ] same as [ 3 >= 3 ] --> greater or equal
 - [ 3 -le 3 ] same as [ 3 <= 3 ] --> less or equal
+
+### Exit Status
+
+0 - good
+1+ - error
