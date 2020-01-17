@@ -18,10 +18,18 @@ read -p "Type user to add: " username
 # hide password?
 
 ### Server to add user to
+# TODO: hide readpassword
 read -p "Enter a hostname to add user to: " hostname
 ssh root@$hostname "useradd ${username} \
                     && passwd $username \
-                    && chmod -aG wheel $username"
+                    && usermod -aG wheel $username"
+
+
+### Add $username to sudoers
+# TODO: line below root
+# root    ALL=(ALL)       ALL
+# $username ALL=(ALL)       ALL
+
 
 ### Exit from remote host
 
@@ -34,9 +42,14 @@ echo "Exiting $hostname ..."
 ### Copy ssh public key
 
 echo "Copying public $username key to $hostname ..."
-ssh-copy-id ~/.ssh/id_rsa.pub $username@$hostname
+ssh-copy-id -i ~/.ssh/id_rsa.pub $username@$hostname
 
 ### Copy .bash_profile to .bashr
+# TOD0: cp 
+# .vimrc
+# .gitignore
+# .kubectl_aliases
+# .docker_aliases
 
 scp ~/.bash_profile $username@$hostname:~/.bashrc
 
@@ -52,5 +65,5 @@ scp ~/.bash_profile $username@$hostname:~/.bashrc
 # echo """
 # Host $alias
 #     HostName $hostname
-#     User $usernam
+#     User $username
 # """ >> ~/.ssh/config
